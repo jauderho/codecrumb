@@ -1,0 +1,5 @@
+
+* The AppleScript file is a binary but provides the same functionality as the VBScript. 
+* You will need the AppleScript editor in order to edit the file.
+* By default, location, event and lens info is extracted and written into IPTC.
+
