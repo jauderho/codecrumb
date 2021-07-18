@@ -3,13 +3,9 @@
 # extract urls from a file
 #
 
-import re
-import sys
-import urllib
-from xml.dom import minidom
-
-import HTMLParser
+import sys, re, urllib, HTMLParser
 from BeautifulSoup import BeautifulSoup
+from xml.dom import minidom
 
 URL = "file:///Users/codecrumb/Downloads/delicious.htm"
 
