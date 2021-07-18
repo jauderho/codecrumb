@@ -9,7 +9,7 @@ from xml.dom import minidom
 
 URL = "file:///Users/codecrumb/Downloads/delicious.htm"
 
-html = urllib.urlopen(URL).read()
+html = urllib.request.urlopen(URL).read()
 soup = BeautifulSoup(html)
 
 for link in soup.findAll("a"):
