@@ -3,13 +3,18 @@
 # extract urls from a file
 #
 
-import sys,re,urllib,HTMLParser
-from BeautifulSoup import BeautifulSoup
+import re
+import sys
+import urllib
 from xml.dom import minidom
 
-URL = 'file:///Users/codecrumb/Downloads/delicious.htm'
+import HTMLParser
+from BeautifulSoup import BeautifulSoup
+
+URL = "file:///Users/codecrumb/Downloads/delicious.htm"
 
 html = urllib.urlopen(URL).read()
 soup = BeautifulSoup(html)
-for link in soup.findAll('a'):
-	print link['href']
+
+for link in soup.findAll("a"):
+	print(link["href"])
