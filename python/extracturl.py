@@ -13,4 +13,4 @@ html = urllib.request.urlopen(URL).read()
 soup = BeautifulSoup(html)
 
 for link in soup.findAll("a"):
-	print(link["href"])
+    print(link["href"])
